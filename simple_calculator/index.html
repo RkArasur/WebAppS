@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    
+    <!-- styles -->
+    <link rel="stylesheet" href="./main.css">
+
+    <!-- javascript -->
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="calculator">
+            <div class="cal-input">
+                <input type="text" id="input" name="input">
+            </div>
+            <div class="result"><h3></h3></div>
+            <div class="numbers">
+                <div class="row">
+                <button data-value="1">1</button>
+                <button data-value="2">2</button>
+                <button data-value="3">3</button>
+                </div>
+                <div class="row">
+                <button data-value="4">4</button>
+                <button data-value="5">5</button>
+                <button data-value="6">6</button>
+                </div>
+                <div class="row">
+                <button data-value="7">7</button>
+                <button data-value="8">8</button>
+                <button data-value="9">9</button>
+                </div>
+                <div class="row">
+                <button data-value="00">00</button>
+                <button data-value="0">0</button>
+                <button data-value=".">.</button>
+                </div>
+            </div>
+            <div class="operations">
+                <button data-value="+">+</button>
+                <button data-value="-">-</button>
+                <button data-value="x">x</button>
+                <button data-value="/">/</button>
+                <button id="equals" data-value="">=</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
