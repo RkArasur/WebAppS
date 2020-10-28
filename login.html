@@ -5,18 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login/Signup</title>
     <link rel="stylesheet" href="loginstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Tomorrow:ital,wght@1,100&display=swap" rel="stylesheet">
+    <script defer>
+      function load () {
+        document.getElementById("regcheck").style = "display:none;";
+        document.getElementById("logincheck").style = "display:block;";
+      }
+      function login (e) {
+        document.getElementById("logincheck").style = "display:block;";
+        document.getElementById("regcheck").style = "display:none;";
+        document.getElementById("lg").classList.add("active");
+        document.getElementById("reg").classList.remove("active");
+      }
+      function register (e) {
+        document.getElementById("regcheck").style = "display:block;";
+        document.getElementById("regcheck").style = "height:100%;";
+        document.getElementById("logincheck").style = "display:none;";
+        document.getElementById("lg").classList.remove("active");
+        document.getElementById("reg").classList.add("active");
+        
+      }
+    </script>
 </head>
-<body>
+<body onload="load()">
     <div class="loginbox">
-      <h1>Sign-in here</h1>
-      <form>
-        <p>Username</p>
-        <input type="text" name="usr" placeholder="Username">
-        <p>Password</p>
-        <input type="password" name="pwd" placeholder="Password">
-        <input type="submit" name="" value="sign-in">
-        <a href="#">New User?</a>
-      </form>
-    </div>
+      <div class="toggle-btn">
+        <button type="button" id="lg" class="active" onclick="login()">Sign-in</button>
+        <button type="button" id="reg" onclick="register()">Register</button>
+      </div>
+      <div id="logincheck">
+        <h1>Sign-in here</h1>
+        <form autocomplete="off">
+          <p>Username</p>
+          <input type="text" name="usr" placeholder="Username">
+          <p>Password</p>
+          <input type="password" name="pwd" placeholder="Password">
+          <input type="submit" value="sign-in">
+        </form>
+      </div>
+      <div id="regcheck">
+        <h1>Register now</h1>
+        <form autocomplete="off">
+          <p>E-mail</p>
+          <input type="email" name="usr" class="emailinp" placeholder="E-mail">
+          <p>Username</p>
+          <input type="text" name="usrname" placeholder="Username">
+          <p>Password</p>
+          <input type="password" name="pwd" placeholder="Password">
+          <p>Confirm Password</p>
+          <input type="password" name="cnf-pwd" placeholder="Password">
+          <input type="submit" value="Register">
+        </form> 
+      </div>
+
+  </div>
 </body>
 </html>
