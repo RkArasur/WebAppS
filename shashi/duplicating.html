@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Duplicating fields</title>
+    </head>
+
+    <body> 
+        <form action="" id="personal-info">
+            <div class="field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+        </form> 
+        <button id="addOneMoreNmae">Add +</button>
+    </body>
+
+    <script>
+        const button = document.getElementById("addOneMoreNmae");
+        const inpblock = document.getElementById("personal-info");
+        const formFields = inpblock.innerHTML;
+
+        button.addEventListener("click",function(){
+            inpblock.innerHTML = inpblock.innerHTML+formFields;
+        });
+    </script>
+
+</html>
