@@ -1,0 +1,100 @@
+body{
+    background-color: aliceblue;
+}
+.nav{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width:100%;
+    font-size: 25px;
+    display: flex;
+    box-shadow: 0px 0px 7px #000;
+}
+.nav a{
+    width: 14.28%;
+    text-align: center;
+    text-decoration: none;
+    border-left: 0.5px solid #fff;
+    border-right: 0.5px solid #fff;
+    color: darkslategray;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav a:hover{
+    transform: scale(1.05);
+    color: #262626;
+}
+form{
+    margin-top: 55px;
+}
+hr{
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0))
+}
+.personal{
+    padding: 20px;
+}
+span input{
+    border: solid 1px transparent;
+    border-bottom: solid 2px gray;
+    width: 300px;
+    outline: none;
+    height: 40px;
+    font-size: 20px;
+    background-color: aliceblue;
+}
+header{
+    text-align: left;
+    font-family: 'poppins', sans-serif;
+    color: blue;
+    font-size: 30px;
+}
+label{
+    text-align: left;
+    font-family: 'poppins', sans-serif;
+    color: darkslategray;
+    font-size: 15px;
+}
+.row{
+    padding: 10px;
+    display: flex;
+}
+span{
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+input[type="submit"]{
+    float: right;
+    outline:none;
+    height: 50px;
+    width: 250px;
+    background-color: white;
+    font-family: 'poppins', sans-serif;
+    font-size: 25px;
+    border: solid 0.2px #262626;
+    color: blue;
+    border-radius: 5px;
+}
+input[type="submit"]:hover{
+    background-color: blue;
+    color: white;
+}
+button{
+    background-color: aliceblue;
+    border: solid 1px transparent;
+    outline: none;
+    color:gray;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'poppins',sans-serif;
+}
+button:hover{
+    color: #000;
+}
+textarea{
+    outline: none;
+}

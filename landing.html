@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/homestyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <title>Resume Form</title>
+</head>
+<body>
+    <div class="nav">
+        <a href="#1">Personal</a>
+        <a href="#2">Education</a>
+        <a href="#3">Work</a>
+        <a href="#4">Projects</a>
+        <a href="#5">Achivements</a>
+        <a href="#6">Skills</a>
+        <a href="#7">Certifications</a>
+    </div>
+    <form autocomplete="off" id="inp-form">
+        <div class="personal" id="1">
+            <header>Personal details</header><br>
+            <div class="row">
+            <span>
+            <label for="fname">Firstname</label><br>
+            <input type="text" name="firstname" id="fname" placeholder="Firstname" required>
+            </span>
+            <span>
+            <label for="lname">Lastname</label><br>
+            <input type="text" name="lastname" id="lname" placeholder="Lastname">
+            </span>
+            <span>
+            <label for="dob">DOB</label><br>
+            <input type="date" name="dob" id="dob" placeholder="Dob" max="2002-01-01" min="1970-01-01" required></span></div>
+            <br><div class="row">
+            <span>
+            <label for="address">Address</label><br>
+            <input type="text" name="address" id="address" placeholder="Address" required></span>
+            <span>
+            <label for="zipc">ZipCode</label><br>
+            <input type="number" id="zipc" name='zip' placeholder="ZipCode" required></span></div>
+            <br><div class="row">
+            <span>
+            <label for="mailid">E-mail</label><br>
+            <input type= "email" name="mail" id="mailid" placeholder="E-mail" required></span>
+            <span>
+            <label for="phn">Mobile/phone</label><br>
+            <input type="tel" name="phone" id="phn" placeholder="Mobile" minlength=10 maxlength=10 required></span></div>
+        </div><hr>
+        <div class="personal" id="2">
+            <header>Education</header><br>
+            <div class="row">
+            <span>
+            <label for="deg">Degree</label><br>
+            <input type="text" id="deg" placeholder="SSLC/PU/UG/PG" required></span>
+            <span>
+            <label for="institute">Institution</label><br>
+            <input type="text" id="institute" placeholder="School/College" required></span>
+            <span>
+            <label for="board">Institution</label><br>
+            <input type="text" id="board" placeholder="Board" required></span>
+            </div><br>
+            <div class="row">
+            <span>
+            <label for="course">Course/Stream</label><br>
+            <input type="text" name="course" id="Course" placeholder="Specialization" required>
+            </span>
+            <span>
+            <label for="yop">Year of Passing</label><br>
+            <input type="tel" name="yop" id="yop" placeholder="Year of Passing" maxlength="4" minlength="4" required>
+            </span>
+            <span>
+            <label for="aggregate">Aggregate</label><br>
+            <input type="text" name="aggregate" id="aggregate" placeholder="Percentage/CGPA">
+            </span>
+            </div><br>
+            <button id="addEducation">+ Add Education</button>
+        </div><br><hr>
+        <div class="personal" id="3">
+            <header>Work Experience</header><br>
+            <div class="row">
+                <span>
+                    <label for="role">Role</label><br>
+                    <input type="text" name="role" id="role" placeholder="role/Position">
+                </span>
+                <span>
+                    <label for="company">company</label><br>
+                    <input type="text" name="company" id="company" placeholder="Company">
+                </span>
+            </div><br>
+            <div class="row">
+                <span>
+                    <label for="desc">Description</label><br>
+                    <input type="text" name="desc" id="desc" placeholder="description,Reference">
+                </span>
+            </div><br>
+            <button id="addWork">+ Add Work</button>
+        </div><br><hr>
+        <div class="personal" id="4">
+            <header>Projects</header><br>
+            <div class="row">
+                <span>
+                    <label for="ptitle">Title</label><br>
+                    <input type="text" name="ptitle" id="ptitle" placeholder="Title">
+                </span>
+                <span>
+                    <label for="pdesc">Description</label><br>
+                    <textarea name="pdesc" id="pdesc" form="inp-form" cols="30" rows="10"></textarea>
+                </span>
+            </div><br>
+            <button id="addProject">+ Add Project</button>
+        </div><br><hr>
+        <div class="personal" id="5">
+            <header>Achivements</header><br>
+            <div class="row">
+                <span>
+                    <label for="atitle">Title</label><br>
+                    <input type="text" name="atitle" id="atitle" placeholder="Title">
+                </span>
+                <span>
+                    <label for="adesc">Description</label><br>
+                    <textarea name="adesc" id="adesc" form="inp-form" cols="30" rows="10"></textarea>
+                </span>
+            </div><br>
+            <button id="addAchievement">+ Add Achievement</button>
+        </div><br><hr>
+        <div class="personal" id="7">
+            <header>Certifications</header><br>
+            <div class="row">
+                <span>
+                    <label for="ctitle">Title</label><br>
+                    <input type="text" name="ctitle" id="ctitle" placeholder="Title">
+                </span>
+                <span>
+                    <label for="portal">Company/Portal</label><br>
+                    <input type="text" name="portal" id="portal" placeholder="Eg:Udemy,Coursera etc.">
+                </span>
+            </div><br>
+            <div class="row">
+                <span>
+                    <label for="pdesc">Description</label><br>
+                    <textarea name="pdesc" id="pdesc" form="inp-form" cols="30" rows="10"></textarea>
+                </span>
+            </div><br>
+            <button id="addCertificate">+ Add Certificate</button>
+        </div><br><hr>
+        <input type="submit" value="Submit">
+    </form><br><br>
+    <div class="footer">
+        <p>Copyrights \copy</p>
+    </div>
+</body>
+</html>
